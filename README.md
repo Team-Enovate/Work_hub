@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# WORK HUB <br>
+## Decentralized Job Platform for Tech Freelancers and Developers <br> <br>
+## Project Description <br>
+<p>This product will be used by tech freelancers and developers to get jobs easily and showcase their portfolio to a stream of clients. We are also making it decenttalized using solidity smart contracts to make sure the platform is safe and secure. </p>
+<p>We are making the product a one stop shop for every clients looking for experienced and trusted talents for their product. Payment will also be made seamless through the ethereum blockchain. We also want to make sure each freelancer is paid accurately and quickly for their services which is one of the problems faced in web2 job applications </p>
+<p>We are also commited to continuous development of this project because it we are planning to integrate so many features like a chat feature,a social media connect feature and a fully functioning DApp wallet inside the app, so that all interactions and payment between clients and freelancers will be done in-App.  </p> <br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Snapshot <br>
+![Alt text](https://drive.google.com/uc?export=view&id=1Z4eMJhFwYdiykOKKsi8TiJH0YODB7nAl "Optional title")
+<br>
+![Alt text](https://drive.google.com/uc?export=view&id=1RL9WmhICnBJDwGgIN5Qk-Rq_2hqXh7Om "Optional title")<br>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Project Website Link <br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://workhub.affordableklass.com.ng
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Aknowledgement <br>
 
-### `npm test`
+learn.figment.io
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Project Authors <br>
+<p>Samuel Osiyomeoh Samuel <li>https://github.com/Osiyomeoh </li>
+  </p>
+<p>Ayoola Victor Oladeinde <li>https://github.com/Ayoolavictor  </li> </p>
+<p>Samaila Anthony Malima <li>https://github.com/samailamalima </li> </p>
+<p>Nubi Oludayo James  <li>https://github.com/nubiolujimmy    </li></p>
+<p>Agbo Chiemezie Precious <li> https://github.com/chiemezie1  </li>   </p><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Install/Run this Project <br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is an example of how you can set up your project locally. To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo
 
-### `npm run eject`
+```sh
+git clone with HTTPS          https://github.com/Team-Enovate/Work_hub.git
+git clone with SSH            git@github.com:Team-Enovate/Work_hub.git
+git clone with Github CLI     gh repo clone Team-Enovate/Work_hub
+```
+2. Development
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Running the frontend code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```sh
+1. npm install
+2. npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Running the smart contract
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```sh
+1. cd contracts
+2. npm install
+3. npx hardhat run scripts/run.js
+4. make sure you fill up the information in .env file
+```
 
-## Learn More
+This is how your .env file is suppose to look like. Remember to remove `<>` when placing your private and API keys.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+PRIVATE_KEY=<YOUR_PRIVATE_KEY_HERE>
+WEB3_API_KEY=<WEB3_API_KEY>
+WALLET_ADDRESS=<YOUR_WALLET_ADDRESS>
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## LICENSE <br>
+<p>MIT </p>
+<p>GRANDIDA</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
