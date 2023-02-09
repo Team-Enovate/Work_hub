@@ -16,6 +16,8 @@ import Company3 from "./pages/Company3";
 import User1 from "./pages/User1";
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
+import LogoutButton from "./pages/Logout";
+import LoginStatus from "./pages/LoginStatus";
 import MainPage from "./pages/MainPage";
 import ExpensesPage from "./pages/ExpensesPage";
 import RecordsPage from "./pages/RecordsPage";
@@ -41,18 +43,20 @@ const App = () => {
        <MyNavbar />
          <Switch>
          <Route path="/" exact component={LandingPage} />
-         <TransactionProvider><Route path="/Login" exact component={LoginPage} />
+         <TransactionProvider>
          <Route path="/signup1" component={SignUp1} />
          <Route path="/company1" component={Company1} />
          <Route path="/company2" component={Company2} />
          <Route path="/company3" component={Company3} />
-        
-      {isAuthenticated ? <User3 /> : <LoginPage/>}
-      <User3 />
-    
+        <div>
+        {isAuthenticated ?  <LogoutButton/> : <LoginPage/>}
+      <LoginStatus  />
+        </div>
+      
          <Route path="/user1" component={User1} />
          <Route path="/user2" component={User2} />
          <Route path="/user3" component={User3} />
+       
           <Route path="/signup" component={SignUpPage} />
            <Route  path="/main" component={MainPage} />
            <Route path="/expenses" component={ExpensesPage} /> 
@@ -60,6 +64,7 @@ const App = () => {
            <Route path="/records" component={RecordsPage} />
            </TransactionProvider>  
          </Switch>
+       
          <Footer/>
        </BrowserRouter>
     

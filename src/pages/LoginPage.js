@@ -29,7 +29,7 @@ const LoginPage = () => {
       
       
       
-      <button onClick={() => openSignIn()}>Login</button>;
+      <button class="text-center btn btn-primary btn-lg" onClick={() => openSignIn()}>Login</button>
             </div>
   );
 };

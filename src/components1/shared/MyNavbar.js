@@ -11,6 +11,7 @@ import {
   NavLink
 } from "reactstrap";
 
+
 const NavBar = () => {
   return (
     <div>
@@ -68,12 +69,12 @@ const NavBar = () => {
             
                 <li class="nav-item">
                     <a class="nav-link btn btn-primary text-white" type="button" tag={RRNavLink} to="/Login" data-toggle="modal" data-target="#myModal"><NavLink tag={RRNavLink} to="/Login">
-            Log In
+            Get Job
           </NavLink></a>                  
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn btn-danger text-white" type="button" tag={RRNavLink} to="/signup" data-toggle="modal" data-target="#myModal"><NavLink tag={RRNavLink} to="/signup1">
-            Sign Up
+            Post Job
           </NavLink></a>
                 </li>
             </ul>

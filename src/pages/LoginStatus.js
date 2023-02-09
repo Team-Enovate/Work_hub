@@ -78,7 +78,7 @@ const User3 = () => {
         <div>Account: {account?.sub}</div>
         <div>Is Wallet Connected? {connectedWallet ? 'Yes' : 'No'}</div>
         {connectedWallet && <div>Wallet address: {connectedWallet}</div>}
-        <div>Is Logged In? {isAuthenticated ? 'Yes'(<button onClick={() => logout()}>Logout</button>): 'No'}</div>
+        <div>Is Logged In? {isAuthenticated ? 'yes' : 'No'}</div>
       </div>
     </div>
       </Tab>
@@ -91,8 +91,7 @@ const User3 = () => {
     </Tabs>
                     </div>
                     <div class="col-md-2">
-                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                        
+                    <div>{isAuthenticated ? (<button onClick={() => logout()}>Logout</button>): 'login'}</div>
                     </div>
                 </div>
                 </div>
