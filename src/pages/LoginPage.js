@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import work from "../images/work.jpeg";
 import { Link } from "react-router-dom";
 import { TransactionContext } from "../context/TransactionContext";
-
-
+import { useSlashAuth } from '@slashauth/slashauth-react';
 const LoginPage = () => {
-  const {connectWallet, currentAccount} = useContext(TransactionContext);
+  const { openSignIn } = useSlashAuth();
+
+   
 
   return (
     <div
@@ -28,7 +29,7 @@ const LoginPage = () => {
       
       
       
-      {!currentAccount && (<button type="button" onClick={connectWallet} class="btn btn-primary btn-lg"> Connect Wallet</button>)}
+      <button onClick={() => openSignIn()}>Login</button>;
             </div>
   );
 };

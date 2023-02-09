@@ -9,6 +9,7 @@ import "./styles.css";
 import LandingPage from "./pages/LandingPage";
 import SignUp1 from "./pages/SignUp1";
 import User2 from "./pages/User2";
+import User3 from "./pages/User3";
 import Company1 from "./pages/Company1";
 import Company2 from "./pages/Company2";
 import Company3 from "./pages/Company3";
@@ -18,6 +19,7 @@ import LoginPage from "./pages/LoginPage";
 import MainPage from "./pages/MainPage";
 import ExpensesPage from "./pages/ExpensesPage";
 import RecordsPage from "./pages/RecordsPage";
+import { useSlashAuth } from '@slashauth/slashauth-react';
 
 import {
   BrowserRouter as Router,
@@ -32,7 +34,7 @@ import { TransactionProvider } from "../src/context/TransactionContext";
 
 
 const App = () => {
-  
+  const { isAuthenticated } = useSlashAuth();
     return (
       <> 
       <BrowserRouter>
@@ -44,8 +46,13 @@ const App = () => {
          <Route path="/company1" component={Company1} />
          <Route path="/company2" component={Company2} />
          <Route path="/company3" component={Company3} />
+        
+      {isAuthenticated ? <User3 /> : <LoginPage/>}
+      <User3 />
+    
          <Route path="/user1" component={User1} />
          <Route path="/user2" component={User2} />
+         <Route path="/user3" component={User3} />
           <Route path="/signup" component={SignUpPage} />
            <Route  path="/main" component={MainPage} />
            <Route path="/expenses" component={ExpensesPage} /> 

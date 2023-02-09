@@ -41,7 +41,7 @@ const SignUp1 = () => {
   <div class="card-body justify-content-center">
 
    
-    <button href="#" type="button"  class="btn btn-warning text-white"><NavLink tag={RRNavLink} to="/user1">Developer</NavLink></button>
+    <button href="#" type="button"  class="btn btn-warning text-white"><NavLink tag={RRNavLink} to="/user3">Developer</NavLink></button>
   </div>
 </div>
     </div>
