@@ -29,9 +29,7 @@ const User3 = () => {
     
    {/* <!-- Pills navs --> */}
    <div>
-   <div class="position-absolute top-left"> <a class="btn btn-warning" href="#" role="button"><NavLink tag={RRNavLink} to="/company1">
-            Back
-          </NavLink></a></div>
+   
   
    
    
